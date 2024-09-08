@@ -11,6 +11,11 @@ fastapi = "^0.112.2"
 pytest = "^8.3.2"
 uvicorn = "^0.30.6"
 sqlmodel = "^0.0.22"
+pydantic = "^2.8.2"
+pyjwt = "^2.9.0"
+
+[tool.poetry.scripts]
+start = "uvicorn app.main:app --reload --host 0.0.0.0 --port 8000"
 
 
 [build-system]

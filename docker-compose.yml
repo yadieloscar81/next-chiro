@@ -1,0 +1,10 @@
+
+services:
+  app:
+    build:
+      dockerfile: backend/Dockerfile
+    environment:
+      - INSTALL_DEV=true  # Change to false to avoid installing dev dependencies
+    # command: poetry run your_command_here  # Replace `your_command_here` with the command you want to run
+    ports:
+      - "8000:8000" 
